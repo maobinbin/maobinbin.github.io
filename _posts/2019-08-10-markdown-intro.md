@@ -1,26 +1,11 @@
 ---
 layout: post
-title: 一份简明的 Markdown 笔记与教程
+title: Markdown 笔记
 categories: Markdown
-description: 一份简明的 Markdown 笔记与教程
+description: Markdown 笔记
 keywords: Markdown, VSCode
 ---
 
-为部门内知识分享准备的素材，记录了 Markdown 的优点、应用场景和编辑工具，介绍了标准语法与扩展语法，以及一些应用 Markdown 的奇技淫巧。个人使用 Markdown 的经验持续补充中，最新完整版请参见
-
-<https://github.com/mzlogin/markdown-intro>
-
----
-
-自从 2014 年左右接触到 Markdown 以来，对它的使用就一发而不可收拾。从最开始使用它在 GitHub Pages 里写博客，到用它编辑项目的 README 文件，再到撰写开发文档，编辑微信公众号文章和邮件内容等等，这期间也见证了它在各类平台和网站上的普及和被原生支持，可以说，Markdown 如今已经渗透了我在技术和网络活动的方方面面，成为了我撰写文本文档的首选。
-
-那么首先我们一起来看一下它的「定义」：
-
-> Markdown 是一种轻量级标记语言，创始人为 John Gruber。它允许人们「使用易读易写的纯文本格式编写文档，然后转换成有效的 XHTML（或者 HTML）文档」。——维基百科
-
-本文档的目的不在于面面俱到地介绍 Markdown，只是作为我对其理解的笔记整理，希望能同时帮助一些对 Markdown 感兴趣的人快速上手，或是作为一个工具，供对其已经有所了解的人在需要时参考。
-
-接下来请随我一起深入了解这门并不神秘的实用标记语言。
 
 **目录**
 
@@ -72,10 +57,6 @@ keywords: Markdown, VSCode
 * 专用编辑器
 
     Ulysses / Mou / Typora / Markpad
-
-* 在线编辑器
-
-    各种支持 Markdown 的网站都提供了在线编辑器
 
 ## 语法
 
@@ -246,62 +227,22 @@ Markdown 支持行内式链接和引用式链接。
 **Markdown：**
 
 ```
-行内式 [博客](https://mazhuang.org "我的个人博客") 链接，带 title。
-
 行内式 [GitHub](https://github.com/mzlogin) 链接。
 
-引用式 [博客][1] 链接。
-
-引用式 [GitHub][2] 链接，带 title。
-
-[1]: https://mazhuang.org
-[2]: https://github.com/mzlogin "我的 GitHub 主页"
+引用式 [GitHub][1] 链接。
+[2]: https://github.com/ "GitHub 主页"
 ```
 
 **预览效果：**
-
-行内式 [博客](https://mazhuang.org "我的个人博客") 链接，带 title。
-
 行内式 [GitHub](https://github.com/mzlogin) 链接。
+引用式 [GitHub][1] 链接，带 title。
+[1]: https://github.com " GitHub 主页"
 
-引用式 [博客][1] 链接。
-
-引用式 [GitHub][2] 链接，带 title。
-
-[1]: https://mazhuang.org
-[2]: https://github.com/mzlogin "我的 GitHub 主页"
-
-**对应 HTML：**
-
-```html
-<p>行内式 <a href="https://mazhuang.org" title="我的个人博客">博客</a> 链接，带 title。</p>
-
-<p>行内式 <a href="https://github.com/mzlogin">GitHub</a> 链接。</p>
-
-<p>引用式 <a href="https://mazhuang.org">博客</a> 链接。</p>
-
-<p>引用式 <a href="https://github.com/mzlogin" title="我的 GitHub 主页">GitHub</a> 链接，带 title。</p>
-```
 
 ### 图片
 
 在超链接的写法前加一个 `!`，就是引用图片的方法。
 
-**Markdown：**
-
-```
-![Alt text](https://mazhuang.org/favicon.ico "favicon")
-```
-
-**预览效果：**
-
-![Alt text](https://mazhuang.org/favicon.ico "favicon")
-
-**对应 HTML：**
-
-```html
-<img src="https://mazhuang.org/favicon.ico" alt="Alt text" title="favicon">
-```
 
 ### 列表
 
@@ -329,20 +270,7 @@ Markdown 支持行内式链接和引用式链接。
 2. 葡萄
 3. 榴莲
 
-**对应 HTML：**
 
-```html
-<ul>
-  <li>苹果</li>
-  <li>葡萄</li>
-  <li>榴莲</li>
-</ul>
-<ol>
-  <li>苹果</li>
-  <li>葡萄</li>
-  <li>榴莲</li>
-</ol>
-```
 
 其中无序列表的标记可以使用 `+`、`-` 或 `*`，有序列表前的数字可以是乱序的。
 
@@ -368,16 +296,6 @@ Android 里使用 `TextUtils` 类的 `isEmpty` 方法来判断字符串是否为
 if (TextUtils.isEmpty(text)) {
     return null;
 }
-```
-
-**对应 HTML：**
-
-```html
-<p>Android 里使用 <code>TextUtils</code> 类的 <code>isEmpty</code> 方法来判断字符串是否为空。</p>
-
-<div class="highlight highlight-source-java"><pre><span class="pl-k">if</span> (<span class="pl-smi">TextUtils</span><span class="pl-k">.</span>isEmpty(text)) {
-    <span class="pl-k">return</span> <span class="pl-c1">null</span>;
-}</pre></div>
 ```
 
 上例中的语言标记 `java` 可选填，可用于在编辑器和渲染后的效果里添加语法高亮。
@@ -406,21 +324,6 @@ if (TextUtils.isEmpty(text)) {
 
 - - -
 
-**对应 HTML：**
-
-```
-<hr />
-
-<hr />
-
-<hr />
-```
-
-### 嵌入 HTML
-
-Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷的插入 HTML 标签的方式。它对应的只是 HTML 标签的一个很小的子集。
-
-对于那些没有办法用 Markdown 语法来对应的 HTML 标签，直接使用 HTML 来写就好了。
 
 ## 扩展语法
 
@@ -442,34 +345,7 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 | 0     | 张三       | 28         | 男         |
 | 1     | 李四       | 29         | 男         |
 
-**对应 HTML：**
 
-```html
-<table>
-  <thead>
-    <tr>
-      <th>编号</th>
-      <th align="left">姓名（左）</th>
-      <th align="right">年龄（右）</th>
-      <th align="center">性别（中）</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td align="left">张三</td>
-      <td align="right">28</td>
-      <td align="center">男</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td align="left">李四</td>
-      <td align="right">29</td>
-      <td align="center">男</td>
-    </tr>
-  </tbody>
-</table>
-```
 
 ### 任务列表
 
@@ -489,15 +365,6 @@ Markdown 标记语言的目的不是替代 HTML，也不是发明一种更便捷
 - [ ] 清洗油烟机
 - [ ] 拖地
 
-**对应 HTML：**
-
-```html
-<ul class="contains-task-list">
-  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox" checked=""> 洗碗</li>
-  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 清洗油烟机</li>
-  <li class="task-list-item"><input type="checkbox" id="" disabled="" class="task-list-item-checkbox"> 拖地</li>
-</ul>
-```
 
 如果是在 GitHub / GitLab 的 Issue 里，会附赠任务完成比例提示效果：
 
@@ -543,13 +410,7 @@ https://github.com
 
 <example@gmail.com>
 
-**对应 HTML：**
 
-```html
-<p><a href="https://github.com">https://github.com</a></p>
-
-<p><a href="mailto:example@gmail.com">example@gmail.com</a></p>
-```
 
 ### emoji
 
@@ -565,15 +426,6 @@ https://github.com
 
 :camel: :blush: :smile:
 
-**对应 HTML：**
-
-```html
-<p>
-  <img class="emoji" title=":camel:" alt=":camel:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f42b.png" height="20" width="20">
-  <img class="emoji" title=":blush:" alt=":blush:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f60a.png" height="20" width="20">
-  <img class="emoji" title=":smile:" alt=":smile:" src="https://assets-cdn.github.com/images/icons/emoji/unicode/1f604.png" height="20" width="20">
-</p>
-```
 
 ## 奇技淫巧
 
@@ -581,29 +433,7 @@ https://github.com
 
 ### 画流程图和时序图
 
-有部分网站和编辑器实现了对 Markdown 里流程图和时序图的支持，比如我们使用的项目管理工具 TAPD 的在线编辑器，还有 VSCode + 插件 Markdown Preview Enhanced 等。
-
-以我们使用的项目管理工具 TAPD 的在线编辑器为例：
-
-![流程图](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/tapd-markdown-flowchart.png)
-
-![时序图](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/tapd-markdown-seq.png)
-
 ### 插入数学公式
-
-仍然以 TAPD 为例：
-
-![数学公式](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/tapd-markdown-math.png)
-
-应该是利用 JavaScript 支持了 LaTeX 公式语法。
 
 ### 用 Markdown 做 PPT
 
-有专门的工具 [Marp](https://github.com/yhatt/marp)，另外使用 VSCode + 插件 Markdown Preview Enhanced 也可以实现。
-
-## 参考
-
-* [Markdown: Syntax - DARING FIREBALL](https://daringfireball.net/projects/markdown/syntax)
-* [Markdown - 维基百科](https://zh.wikipedia.org/wiki/Markdown)
-* [GitHub Flavored Markdown Spec](https://github.github.com/gfm/)
-* [关于 Markdown 的一些奇技淫巧](https://mazhuang.org/2017/09/01/markdown-odd-skills/)
