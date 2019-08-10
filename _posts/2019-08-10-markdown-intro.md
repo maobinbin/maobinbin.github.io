@@ -366,13 +366,6 @@ if (TextUtils.isEmpty(text)) {
 - [ ] 拖地
 
 
-如果是在 GitHub / GitLab 的 Issue 里，会附赠任务完成比例提示效果：
-
-![task list 1](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/task-list-1.png)
-
-还可以直接在网页上拖动调整顺序，勾选和取消勾选。
-
-![task list 2](https://raw.githubusercontent.com/mzlogin/markdown-intro/master/assets/task-list-2.png)
 
 ### 删除线
 
