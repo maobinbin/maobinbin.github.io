@@ -1,7 +1,7 @@
 ---
 layout: post
 title: book list
-categories: others
+categories: Markdown
 description: book list about maths, physics, novel, history and so on
 keywords: books
 ---
