@@ -1,12 +1,10 @@
 ---
 layout: post
-title: Markdown 笔记
-categories: Markdown
-description: Markdown 笔记
-keywords: Markdown, VSCode
+title: book list
+categories: others
+description: book list about maths, physics, novel, history and so on
+keywords: books
 ---
 
+苏菲的世界
 
-**目录**
-
-* TOC
