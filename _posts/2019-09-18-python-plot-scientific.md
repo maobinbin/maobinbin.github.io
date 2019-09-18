@@ -8,7 +8,6 @@ keywords: python, plot, scientific
 
 ```python
 from matplotlib import ticker
-
 from matplotlib.ticker import ScalarFormatter
 
 formatter=ticker.ScalarFormatter(useMathText=True)
