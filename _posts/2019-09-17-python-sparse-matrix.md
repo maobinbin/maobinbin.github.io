@@ -1,6 +1,6 @@
 ---
 layout: post
-title: sparse matrix: scipy.sparse
+title: sparse matrix scipy.sparse
 categories: python
 description: some word here
 keywords: python, sparse matrix, scipy
