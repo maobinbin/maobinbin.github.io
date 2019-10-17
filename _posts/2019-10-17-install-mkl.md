@@ -7,12 +7,14 @@ keywords: linux, mkl
 ---
 
 
-https://software.seek.intel.com/performance-libraries
+download the package: https://software.seek.intel.com/performance-libraries
 
 	
-$ sudo ./install.sh
+sudo ./install.sh
 
 source /opt/intel/bin/compilervars.sh intel64
+
+add the following codes to .bashrc
 
 export CMAKE_INCLUDE_PATH=/opt/intel/compilers_and_libraries_2018.2.199/linux/mkl/include
 
