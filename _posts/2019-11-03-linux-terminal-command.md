@@ -1,9 +1,9 @@
 ---
 layout: post
-title: template page
-categories: [cate1, cate2]
-description: some word here
-keywords: keyword1, keyword2
+title: linux常用命令
+categories: linux
+description: linux terminal command
+keywords: linux, command
 ---
 ```html
 查看进程
