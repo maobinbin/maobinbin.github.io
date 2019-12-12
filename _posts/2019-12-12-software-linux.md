@@ -7,8 +7,8 @@ keywords: software,linux
 ---
 
 
-**ss**
+```shell
 sudo apt install tmux
 sudo apt install gcc
 sudo apt install g++
-
+```
