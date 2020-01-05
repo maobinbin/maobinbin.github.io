@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SLURM系统批量提交任务脚本
-categories: [linux,slurm, sbatch]
+categories: [linux,slurm]
 description: 批量提交任务脚本
 keywords: slurm, sbatch, script
 ---
