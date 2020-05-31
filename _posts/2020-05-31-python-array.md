@@ -2,7 +2,7 @@
 layout: post
 title: python array基本操作
 categories: python
-description: python基本程序语言
+description:python基本程序语言
 keywords: mac
 ---
 
