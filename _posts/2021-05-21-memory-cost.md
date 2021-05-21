@@ -19,6 +19,7 @@ c++中浮点数类型：
 - 1GB=1024MB
 - 1TB=1024GB
 
-$$1GB\approx 8\times 10^9 bit$$
-float matrix with size $1000\times 1000$ cost $$10^6\times 32B$$
+$1GB \approx 10^9B \approx  10^10 bit$
+float matrix with size $10000\times 10000$ cost $10^8\times 32bit\approx4\times 10^8B\approx 0.4G$
 
+so a matrix with $10^5$ about $40G$
